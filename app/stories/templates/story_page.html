@@ -1,0 +1,62 @@
+{% extends "base_nav.html" %}
+
+{% block content %}
+  <!-- Link the stylesheet for this page-->
+  <link rel = "stylesheet" href = "/static/css/story_page.css">
+  
+  <!-- image and box -->
+  <div id = "story_cover">
+    <img id = "cover" src= "/static/images/short_story.png">
+    <div id = "story_title">
+      <!--Overflow the div out of the box, by a certain amount to create an overhang -->
+    </div>
+  </div>
+
+
+  <div class = "contents_container">
+    <div id = "synopsis_container">
+      <h1 id="synopsis"> Synopsis </h2>
+      <p id= "synopsis_explanation">Sample text</p>
+    </div>
+  </div>
+
+  <div id="seperator">
+
+  </div>
+
+  <div id= chapters>
+      <div id= chapters_title>
+        <h1> Chapters </h2>
+      </div>
+      <div> <!-- Blank space --> </div>
+
+    <div class = chapter>
+      <a href= "/stories/chapter1"><button class = "chapter_button">1</button></a>
+      <h4 class = "chapter_desc">Prologue</h4>
+
+    </div>
+
+    <div class = chapter>
+      <a href= "/stories/chapter2"><button class = "chapter_button">2</button></a>
+      <h4 class = "chapter_desc">First Impressions</h4>
+    </div>
+
+    <div class = chapter>
+      <a href= "/stories/chapter3"><button class = "chapter_button">3</button></a>
+      <h4 class = "chapter_desc"> The title of the chapter, page number</h4>
+    </div>
+
+    <div class = chapter>
+      <a href= "/stories/chapter4"><button class = "chapter_button">4</button></a>
+      <h4 class = "chapter_desc"> The title of the chapter, page number</h4>
+    </div>
+
+    <!--Using the box-shadow-->
+  </div>
+
+
+  <div id="end"></div>
+
+
+
+{%endblock%}

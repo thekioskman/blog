@@ -1,0 +1,106 @@
+body{
+    background-color: black!important;
+}
+
+.grid-container{
+    display: grid;
+    grid-column-gap: .5vw;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 6vh;
+    max-height: 80px;
+    font-size: 3vh;
+    background-color:black;
+  
+}
+.nav_link{
+    display: block;
+    color: 	white;
+    text-decoration: none;
+    height: inherit;
+    width: inherit;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+  
+}
+.nav_link:hover{
+    color:inherit !important;
+    text-decoration: none !important;
+    color: rgb(100,115,131) !important;
+  
+}
+  
+#poem_dropdown {
+    margin: none;
+    width: 12.5rem !important;
+    height: 7rem !important;
+    
+}
+
+#settings_dropdown{
+    margin: none;
+    width: 12.5rem !important;
+    height: 9rem !important; 
+}
+
+#website-name{
+  
+    text-align: center;
+    padding-left: 1vw;
+    padding-top: .5vh;
+    grid-column: 1/span 4;
+    font-size: 90%;
+    text-align: left;
+    box-sizing: border-box;
+    max-height: inherit;
+    color: white;
+    font-family: "Georgia",serif;
+    
+}
+  
+  
+#home-page{
+    grid-column: 8/span 1;
+    padding-top: .5vh;
+    text-align: center;
+    font-size: 90%;
+    box-sizing: border-box;
+    max-height: inherit;
+}
+  
+#stories-page{
+    grid-column: 9/span 1;
+    padding-top: .5vh;
+    text-align: center;
+    font-size: 90%;
+    box-sizing: border-box;
+    max-height: inherit;
+    border-width: 0;
+}
+  
+#poems-page{
+    grid-column: 10/span 1;
+    padding-top: .5vh;
+    text-align: center;
+    font-size: 90%;
+    box-sizing: border-box;
+    max-height: inherit;
+}
+  
+#blogs-page{
+    grid-column: 11/span 1;
+    text-align: center;
+    padding-top: .5vh;
+    font-size: 90%;
+    box-sizing: border-box;
+    max-height: inherit;
+}
+  
+#search_bar_container{
+    padding-top: .5vh;
+    padding-top: .7vh;
+    grid-column: 12/ span 1;
+    box-sizing: border-box;
+    max-width: 90px;
+    max-height: inherit;
+}

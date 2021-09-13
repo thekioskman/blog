@@ -1,0 +1,44 @@
+{% extends "base_nav.html"%}
+
+{% block content %}
+<link rel="stylesheet" href = "/static/css/story_page.css">
+<style>
+    body {
+        background-color: rgb(121,92,82) !important;
+    }
+    </style>
+<div id = "story_cover">
+    <img id="cover" src = "/static/images/short_stories_banner.jpg" alt = "Cover image" >
+</div>
+
+<!-- a nice white rgba(237,237,238,255) -->
+
+<!-- bellow the image we want to create a grid-->
+<div id = "short_cards_container">
+    <!-- We want a grid with three stories per row, equally spaced-->
+    
+    <div class = "short_story">
+        <img class = "short_story_cover" src="" alt = "story_cover">
+        <div class = "short_story_summary">
+            <p>A summary of the story</p>
+        </div>
+    </div>
+    <div class = "short_story">
+        <img class = "short_story_cover" src="" alt = "story_cover">
+        <div class = "short_story_summary">
+            <p>A summary of the story</p>
+        </div>
+    </div>
+    <div class = "short_story">
+        <img class = "short_story_cover" src="" alt = "story_cover">
+        <div class = "short_story_summary">
+            <p>A summary of the story</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+{%endblock%}

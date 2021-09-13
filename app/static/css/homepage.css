@@ -1,0 +1,230 @@
+
+.carousel-item > img{
+  height: 47vh;
+  object-fit: cover;
+}
+
+.img-fluid{
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-item{
+  height: auto;
+  max-height: 55vh /* less than the max heigh of the smallest image*/
+}
+
+.carousel-control-prev{
+  background-color: none;
+  max-height: 55vh /* max height of smallest image*/
+
+}
+
+.carousel-control-next{
+  background-color: none;
+  max-height: 55vh /* max height of smallest image*/
+}
+
+#carouselExampleControls{
+  max-height: 55vh; /* max height of smallest image*/
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(100,115,131)
+
+}
+
+.card_container{
+  padding-top: 6vh;
+  display: grid;
+  grid-template-columns: 26vw 26vw 26vw;
+  grid-template-rows: 40vh;
+  grid-column-gap: 5.4vw;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: rgb(180,164,153);
+  padding-bottom: 6vh;
+
+}
+
+.card-text{
+  font-size: 1.2em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media (max-width: 1200px) {
+  .card_container{
+    display: flex;
+    flex-direction: column;
+  }
+  #center_card{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.catagory_line{
+  border: none;
+  width: 75%;
+  height: 3px;
+  background-color: rgb(0,0,0);
+}
+
+.card-title{
+  text-align: center;
+}
+.card-body{
+  text-align: center;
+}
+.catagory{
+  padding-top: 5%;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  background-color: rgb(234,232,228) !important;
+}
+
+.about_container{
+  display: grid;
+  grid-template-columns: auto auto 35vw;
+  grid-template-rows: auto;
+  grid-column-gap: 5vw;
+  background-color: rgb(139,161,184);
+
+
+}
+
+@media (max-width: 1200px) {
+  .about_container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about_author{
+    border-right: none !important;
+  }
+  #title_container{
+    display: block !important;
+  }
+  .latest{
+    overflow: scroll !important;
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+    padding-top: 4% !important;
+  }
+  #end{
+    height: auto !important;
+    min-height: 5vh !important;
+  }
+
+
+
+}
+
+
+.about_author{
+  grid-column: 1/span 2;
+  padding-top: 8vh;
+  background-color: rgb(189,192,197);
+  overflow: auto;
+  height: auto;
+}
+
+#self_portait_picture{
+  object-fit: cover;
+  height: 41%;
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  box-shadow: 1.7vh 1.7vh rgb(64 75 99);
+}
+#self_portait{
+
+}
+#self_description{
+  padding-top: 6%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 4%;
+  box-sizing: border-box;
+  font-size: 1.2em;
+}
+
+.latest{
+  grid-column: 3/ span 1;
+  padding-right: 5vw;
+  padding-top: 5%;
+  background-color: rgb(139,161,184);
+  overflow: hidden;
+  height: auto;
+  padding-bottom: 5%;
+
+}
+#latest_title{
+  text-align: center;
+  font-size: 2em;
+}
+
+.lastest_title_line{
+  border: none;
+  width: 90%;
+  height: 2px;
+  background-color: rgb(0,0,0);
+
+}
+
+#title_container{
+  display: grid;
+  grid-template-columns: auto 9vw auto;
+  grid-template-rows: auto;
+  margin-bottom: 2vh;
+}
+
+#blog_post{
+  margin-bottom: auto;
+}
+
+#blog_post_list{
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.8em;
+}
+
+.post_headline{
+  margin-bottom: 1.5vh;
+}
+
+#stories_title{
+  margin-bottom: 1.5vh;
+}
+
+#poems_title{
+  margin-bottom: 1em;
+}
+
+
+#poem_carousel{
+  height: auto;
+}
+
+#poems{
+  height: 25vh;
+}
+
+.carousel-item > .poem_img{
+  height: 25vh;
+  object-fit: cover;
+}
+
+
+#end{
+  height: auto;
+  min-height: 10vh;
+  width: auto;
+  background-color: rgb(64 75 99);
+}
