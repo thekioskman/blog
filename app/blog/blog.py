@@ -4,5 +4,5 @@ blog_page_bp = Blueprint('blog_page_bp', __name__, template_folder = 'templates'
 
 
 @blog_page_bp.route("/")
-def redirection():
-    return render_template("blog_page.html")
+def blog_home():
+    return render_template("blog_page.html", num_blog_posts = 7)

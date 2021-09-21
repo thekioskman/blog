@@ -1,5 +1,6 @@
 body{
     background-color: black!important;
+    font-family: "Georgia",serif;
 }
 
 .grid-container{
@@ -47,7 +48,7 @@ body{
   
     text-align: center;
     padding-left: 1vw;
-    padding-top: .5vh;
+    padding-top: 1.5vh;
     grid-column: 1/span 4;
     font-size: 90%;
     text-align: left;
@@ -61,7 +62,7 @@ body{
   
 #home-page{
     grid-column: 8/span 1;
-    padding-top: .5vh;
+    padding-top: 1.5vh;
     text-align: center;
     font-size: 90%;
     box-sizing: border-box;
@@ -70,7 +71,7 @@ body{
   
 #stories-page{
     grid-column: 9/span 1;
-    padding-top: .5vh;
+    padding-top: 1.5vh;
     text-align: center;
     font-size: 90%;
     box-sizing: border-box;
@@ -80,7 +81,7 @@ body{
   
 #poems-page{
     grid-column: 10/span 1;
-    padding-top: .5vh;
+    padding-top: 1.5vh;
     text-align: center;
     font-size: 90%;
     box-sizing: border-box;
@@ -90,7 +91,7 @@ body{
 #blogs-page{
     grid-column: 11/span 1;
     text-align: center;
-    padding-top: .5vh;
+    padding-top: 1.5vh;
     font-size: 90%;
     box-sizing: border-box;
     max-height: inherit;
@@ -103,4 +104,63 @@ body{
     box-sizing: border-box;
     max-width: 90px;
     max-height: inherit;
+}
+
+
+#card_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: blue;
+    width: 70vw;
+}
+
+#title_card_container{
+    background-color: rgba(27,27,27,255);
+    width: 70vw;
+    height: 52vh;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+    padding-top: 1%;
+    color:white;
+}
+
+#title_card_container:hover .image {
+    opacity: 0.5;
+}
+
+.overlay {
+    position: relative;
+    bottom: 85%;
+    height: 85%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(170, 180, 181);
+}
+
+#title_card_container:hover .overlay {
+    opacity: .2;
+  }
+#post_catagory_button{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    color:white;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    width: 70vw;
+    height: 7vh;
+    padding-right:0;
+    padding-left: 0;
+    font-size: 20px;
+
+}
+
+.catagory{
+    text-align: center;
+    background-color: rgba(27,27,27,255);
+    padding-top: 4%;
+}
+
+.catagory:hover{
+    background-color: grey;
 }

@@ -6,23 +6,45 @@
 <div class = "container">
 
     <!-- Front page article card -->
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>   
+    <div class = "container" id="title_card_container">
+      <img class="image" src= "/static/images/matt-ragland-8OVDzMGB_kw-unsplash.jpg" width = "100%" height = "85%" style="object-fit: cover;transition:.5s ease;backface-visibility: hidden;" alt="main_card_picture">
+      <div class="overlay">
+      </div>
+      <h2 style="margin-top:1%;position: relative; bottom: 85%;">My Experience with Productivity</h2>
+    </div>
+
     
     <!-- Contains three buttons you can you to filter the type of posts you want-->
     <div id="post_catagory_button" class = "container">
+      <div class = "catagory">
+        Life Style
+      </div>
+      <div class = "catagory" style="background-color: rgba(145,55,255,255);">
+        Technology
+      </div>
+      <div class = "catagory">
+        Business 
+      </div>
+
+    </div>
+    <!-- intermediate Container for newletter add-->
+    <div id = "new_letter_container" class = "container"> 
 
     </div>
 
     <!--Container for the 2/3 collectino of card articles-->
     <div id="card_grid" class = "container">
-
+        
+      {% for x in range(num_blog_posts) %}
+      <div class="container">
+        <img src="nature.jpg" alt="Norway" style="width:100%;object-fit: cover;transition:.5s ease;backface-visibility: hidden;">
+        <div class="text-block">
+          <h4>Nature</h4>
+          <p>What a beautiful sunrise</p>
+        </div>
+      </div>
+      {% endfor %}
+        
 
     </div>
 </div>
