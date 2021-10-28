@@ -1,6 +1,5 @@
 from flask import Flask, redirect, url_for, render_template, request, session, Blueprint , flash, make_response
-
-
+from datetime import datetime
 
 home_page_bp = Blueprint('home_page_bp', __name__, template_folder = 'templates')
 

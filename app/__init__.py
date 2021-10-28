@@ -1,11 +1,12 @@
 from flask import Flask
 from flask.helpers import url_for
+from flask_pymongo import PyMongo
 
 
 def init_app():
     app = Flask(__name__ , instance_relative_config=False)
     app.config.from_object("config.Config")
-
+    
     #app core
     with app.app_context():
         #import all files that are needed for the application
